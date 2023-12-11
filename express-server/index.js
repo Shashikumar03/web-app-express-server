@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 app.get("/html", (req, res) => {
-  fs.readFile("index.html", "utf-8", (err, data) => {
+  fs.readFile("express-server/index.html", "utf-8", (err, data) => {
     if (err) {
       throw err;
     } else {
